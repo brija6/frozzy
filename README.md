@@ -4,29 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frozy Corner Documentation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-    }
-    h1, h2 {
-      color: #a6274f;
-    }
-    p {
-      color: #555;
-    }
-    code {
-      background-color: #f2f2f2;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-    pre {
-      background-color: #f2f2f2;
-      padding: 10px;
-      border-radius: 4px;
-    }
-  </style>
+    
 </head>
 <body>
 

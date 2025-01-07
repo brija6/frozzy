@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frozy Corner Documentation</title>
-    
-</head>
-<body>
+
 
   <h1>Frozy Corner Documentation</h1>
   <p>Welcome to the Frozy Corner project documentation! Below, you'll find explanations and functions for each page and their corresponding components.</p>
@@ -60,5 +52,3 @@
   <h2>Conclusion</h2>
   <p>This documentation outlines the structure and functionality of each key page and component in the Frozy Corner project. By understanding the roles of the HTML, CSS, and JavaScript files, you can make modifications and enhancements to the site as needed.</p>
 
-</body>
-</html>

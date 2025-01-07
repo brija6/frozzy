@@ -1,0 +1,150 @@
+/* Resetting default margins and paddings for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and borders in element dimensions */
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    background-color: #fce4ec; /* Light pink background color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container for the login page */
+  .container {
+    position: relative; /* For positioning child elements */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents overflow issues */
+  }
+  
+  /* Background styling with a background image */
+  .background {
+    padding: 70px; /* Inner spacing around content */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.png'); /* Path to background image */
+    background-size: cover; /* Ensures image covers the entire background */
+    background-position: center; /* Centers the background image */
+  }
+  
+  /* Adding a light pink overlay over the background image */
+  .background::after {
+    content: ""; /* Pseudo-element for overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 192, 203, 0.5); /* Semi-transparent light pink overlay */
+    z-index: 1; /* Ensures overlay stays behind the form */
+  }
+  
+  /* Central content box for the login form */
+  .content-box {
+    position: relative;
+    max-width: 500px; /* Restrict the width of the form */
+    margin: auto; /* Center-align the form */
+    background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Inner spacing */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 2; /* Ensures the form is above the overlay */
+  }
+  
+  /* Logo design */
+  .logo {
+    width: 60px;
+    height: 60px;
+    background: #c2185b; /* Dark pink background */
+    color: white; /* White text */
+    font-size: 24px; /* Font size for initials */
+    font-weight: bold; /* Bold initials */
+    line-height: 60px; /* Vertically align text */
+    border-radius: 50%; /* Circular design */
+    margin: 0 auto 20px auto; /* Center the logo with bottom spacing */
+  }
+  
+  /* Form heading */
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c2185b; /* Dark pink for branding */
+  }
+  
+  /* Subtext below the heading */
+  p {
+    font-size: 16px;
+    color: #555; /* Neutral gray for readability */
+    margin-bottom: 20px; /* Spacing from the form */
+  }
+  
+  /* Styling for the form */
+  form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Spacing between form elements */
+  }
+  
+  /* Labels for input fields */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c2185b; /* Dark pink for branding */
+    text-align: left;
+  }
+  
+  /* Input fields styling */
+  input {
+    font-size: 14px;
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #c2185b; /* Border color matches theme */
+    border-radius: 5px; /* Rounded edges */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  /* Login button styling */
+  button {
+    font-size: 16px;
+    color: white;
+    background: #c2185b; /* Primary dark pink color */
+    padding: 10px 20px; /* Inner spacing */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background change */
+  }
+  
+  /* Hover effect for button */
+  button:hover {
+    background: #ad1457; /* Slightly darker pink for hover state */
+  }
+  
+  /* Cupcake illustrations */
+  .girl-cupcake,
+  .boy-cupcake {
+    position: absolute; /* Position relative to the container */
+    width: 350px; /* Size of the images */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Above overlay but below the form */
+  }
+  
+  /* Positioning the girl cupcake illustration */
+  .girl-cupcake {
+    bottom: 60px; /* Slightly above the container's bottom */
+    left: calc(50% - 370px); /* Position closer to the form */
+    transform: translateX(-50%); /* Center alignment adjustment */
+  }
+  
+  /* Positioning the boy cupcake illustration */
+  .boy-cupcake {
+    bottom: 60px; /* Slightly above the container's bottom */
+    right: calc(50% - 350px); /* Position closer to the form */
+    transform: translateX(50%); /* Center alignment adjustment */
+  }
+  
